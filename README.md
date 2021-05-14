@@ -46,8 +46,21 @@ Will build the bundle js file and .zip file in `build` folder.
 
 ### Deploy
 Upload .zip file to your lambda function.
+<br>
+if you have aws cli, add the `FUNCTION_NAME` in your environment. Environment may look like this
+```
+/**
+ * .env
+*/
+AWS_SDK_LOAD_CONFIG=true
+FUNCTION_NAME={YOUR_LAMBDA_FUNCTION_NAME}
+```
+deploy your function by using aws cli
+```
+npm run deploy
+```
 
-## Other
+## Others
 Setting the AWS Credentials. [Link](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html)
 <br>
 Setting the AWS Region. [Link](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-region.html)
