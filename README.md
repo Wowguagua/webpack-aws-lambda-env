@@ -32,6 +32,14 @@ test();
 ```
 ### Environment
 Add .env in the root and add environment if you want.
+```
+/**
+ * .env
+*/
+AWS_REGION={YOUR_AWS_REGION}
+AWS_ACCESS_KEY_ID={YOUR_AWS_ACCESS_KEY_ID}
+AWS_SECRET_ACCESS_KEY={YOUR_AWS_SECRET_ACCESS_KEY}
+```
 
 ### Test your event
 ```
@@ -52,7 +60,9 @@ if you have aws cli, add the `FUNCTION_NAME` in your environment. Environment ma
 /**
  * .env
 */
-AWS_SDK_LOAD_CONFIG=true
+AWS_REGION={YOUR_AWS_REGION}
+AWS_ACCESS_KEY_ID={YOUR_AWS_ACCESS_KEY_ID}
+AWS_SECRET_ACCESS_KEY={YOUR_AWS_SECRET_ACCESS_KEY}
 FUNCTION_NAME={YOUR_LAMBDA_FUNCTION_NAME}
 ```
 deploy your function by using aws cli
