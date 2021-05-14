@@ -30,6 +30,9 @@ const test = async () => {
 
 test();
 ```
+### Environment
+Add .env in the root and add environment if you want.
+
 ### Test your event
 ```
 npm run test
